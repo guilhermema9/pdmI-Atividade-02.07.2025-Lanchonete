@@ -21,13 +21,5 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        getSupportFragmentManager()
-                .beginTransaction()
-                .setReorderingAllowed(true)
-                .replace(R.id.container1, FragmentoMostrarUsuario.class,dados)
-                .replace(R.id.container2, Fragmento3.class,null)
-                .addToBackStack("inicio")
-                .commit();
-
     }
 }
