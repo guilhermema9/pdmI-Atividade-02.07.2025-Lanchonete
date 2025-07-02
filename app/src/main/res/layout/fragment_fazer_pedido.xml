@@ -1,6 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Nome -->
+    <TextView
+        android:id="@+id/textViewNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Digite seu nome"
+        app:layout_constraintStart_toEndOf="@id/textViewNome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewNome"/>
+
+    <!-- Tipo de Pão -->
+    <TextView
+        android:id="@+id/textViewPao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pão:"
+        app:layout_constraintTop_toBottomOf="@id/editTextNome"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerPao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/textViewPao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewPao"/>
+
+    <!-- Tipo de Carne -->
+    <TextView
+        android:id="@+id/textViewCarne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carne:"
+        app:layout_constraintTop_toBottomOf="@id/spinnerPao"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerCarne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/textViewCarne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewCarne"/>
+
+    <!-- Tipo de Salada -->
+    <TextView
+        android:id="@+id/textViewSalada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salada:"
+        app:layout_constraintTop_toBottomOf="@id/spinnerCarne"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerSalada"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/textViewSalada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewSalada"/>
+
+    <!-- Ovo -->
+    <TextView
+        android:id="@+id/textViewOvo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ovo:"
+        app:layout_constraintTop_toBottomOf="@id/spinnerSalada"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerOvo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/textViewOvo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewOvo"/>
+
+    <!-- Bacon -->
+    <TextView
+        android:id="@+id/textViewBacon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bacon:"
+        app:layout_constraintTop_toBottomOf="@id/spinnerOvo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerBacon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/textViewBacon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewBacon"/>
+
+    <!-- Molho -->
+    <TextView
+        android:id="@+id/textViewMolho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Molho:"
+        app:layout_constraintTop_toBottomOf="@id/spinnerBacon"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerMolho"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/textViewMolho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewMolho"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">Atividade-02.07.2025-Lanchonete</string>
+
+    <string-array name="opcoes_pao">
+        <item>Francês</item>
+        <item>Hotdog</item>
+        <item>Hambúrguer</item>
+    </string-array>
+
+    <string-array name="opcoes_carne">
+        <item>Salsicha</item>
+        <item>Hambúrguer Tradicional</item>
+        <item>Hambúrguer Caseiro</item>
+        <item>Filé em Tiras</item>
+    </string-array>
+
+    <string-array name="opcoes_salada">
+        <item>Tomate e Alface</item>
+        <item>Rabanete e Pepino com Molho de Alho e Iogurte</item>
+        <item>Repolho e Cenoura</item>
+    </string-array>
+
+    <string-array name="opcoes_sim_nao">
+        <item>Sim</item>
+        <item>Não</item>
+    </string-array>
+
+    <string-array name="opcoes_molho">
+        <item>Hecktup e Maionese</item>
+        <item>Barbecue</item>
+        <item>Mostarda e Mel</item>
+    </string-array>
 </resources>
