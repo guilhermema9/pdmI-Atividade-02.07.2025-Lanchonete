@@ -10,12 +10,12 @@
         android:id="@+id/textTituloTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valor Total do Pedido"
+        android:text="Valor Total do Pedido:"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewValorTotal"/>
 
     <TextView
         android:id="@+id/textViewValorTotal"
@@ -24,7 +24,27 @@
         android:text="R$ 0,00"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/textTituloTotal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textTituloTotal"
+        app:layout_constraintBaseline_toBaselineOf="@id/textTituloTotal"
+        android:layout_marginStart="8dp"/>
+
+    <Button
+        android:id="@+id/buttonRegistrarPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar Pedido"
+        app:layout_constraintTop_toBottomOf="@id/textViewValorTotal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/buttonListarPedidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listar Todos os Pedidos"
+        app:layout_constraintTop_toBottomOf="@id/buttonRegistrarPedido"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
